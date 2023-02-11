@@ -1,0 +1,39 @@
+<div class="checker">
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>The schema form</mat-label>
+      <textarea matInput
+                formControlName="schema"
+                cols="70"
+                cdkTextareaAutosize
+                #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="30"
+                cdkAutosizeMaxRows="70"
+      > </textarea>
+      <mat-error *ngIf="this.form.controls.schema.hasError('required')">You must enter a value</mat-error>
+      <mat-error *ngIf="this.form.controls.schema.hasError('invalidJson')">Not a valid JSON</mat-error>
+    </mat-form-field>
+  </form>
+
+  <div>
+    <div class="checker__generated-form">
+      <h2 class="checker__subtitle">Generated form:</h2>
+      <gio-schema-form [schema]="jsonSchema$ | async"
+                       [value]="rawValue"
+                       (updatedValue)="updateValue($event)"></gio-schema-form>
+    </div>
+
+    <div class="checker__generated-value">
+      <h2 class="checker__subtitle">Generated value:</h2>
+
+      <div class="checker__generated-value__value">
+        <button mat-icon-button [cdkCopyToClipboard]="value">
+          <mat-icon aria-label="Copy to clipboard">content_copy</mat-icon>
+        </button>
+        <pre>{{ rawValue | json }}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
