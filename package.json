@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "analyze": "webpack-bundle-analyzer dist/app/stats.json",
     "build": "ng build",
+    "build:stats": "ng build --stats-json",
     "lint": "ng lint",
     "ng": "ng",
     "start": "ng serve",
@@ -49,7 +51,8 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-packagejson": "^2.4.3",
-    "typescript": "~4.9.4"
+    "typescript": "~4.9.4",
+    "webpack-bundle-analyzer": "^4.7.0"
   },
   "packageManager": "yarn@3.4.1"
 }
