@@ -2527,18 +2527,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gravitee/ui-components@npm:^3.38.5":
-  version: 3.38.5
-  resolution: "@gravitee/ui-components@npm:3.38.5"
+"@gravitee/ui-components@npm:^3.42.0":
+  version: 3.42.0
+  resolution: "@gravitee/ui-components@npm:3.42.0"
   dependencies:
     "@codemirror/basic-setup": ^0.19.1
     "@codemirror/language-data": ^0.19.1
     "@codemirror/stream-parser": ^0.19.3
     "@formatjs/intl-locale": ^2.4.40
     "@formatjs/intl-relativetimeformat": ^9.3.2
+    "@popperjs/core": ^2.11.7
     clipboard-copy: ^4.0.0
     codemirror-asciidoc: ^2.0.0
     date-fns: ^2.26.0
+    dompurify: ^3.0.3
     jdenticon: ^3.1.0
     jsonschema: ^1.4.0
     lit: ^2.0.2
@@ -2566,7 +2568,7 @@ __metadata:
       optional: true
     highlight.js:
       optional: true
-  checksum: 1906581656af9568396d1bd7eaa5f66b828fac7481d381802dace559ad8f302b71e11d860b1983364f95cf8ab3777a07f59dab476a7152763d958b25ecfc6abb
+  checksum: 36f05c7fb4a41834eff2c402c6181ab9c2c7070268e8db3aade573632650731857aee8d65e4225467aba7a1730b6e534aab060b37f77f5f32d81925db9a65f10
   languageName: node
   linkType: hard
 
@@ -3759,6 +3761,13 @@ __metadata:
   version: 1.0.0-next.21
   resolution: "@polka/url@npm:1.0.0-next.21"
   checksum: c7654046d38984257dd639eab3dc770d1b0340916097b2fac03ce5d23506ada684e05574a69b255c32ea6a144a957c8cd84264159b545fca031c772289d88788
+  languageName: node
+  linkType: hard
+
+"@popperjs/core@npm:^2.11.7":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: e5c69fdebf52a4012f6a1f14817ca8e9599cb1be73dd1387e1785e2ed5e5f0862ff817f420a87c7fc532add1f88a12e25aeb010ffcbdc98eace3d55ce2139cf0
   languageName: node
   linkType: hard
 
@@ -5668,6 +5677,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dompurify@npm:^3.0.3":
+  version: 3.0.4
+  resolution: "dompurify@npm:3.0.4"
+  checksum: 098de639595861127c644df48932f829d35860058365ea46cbf54f9a93b309774da3c4568198a6daaf68efd1593ed09ff842c0c4e848991e09a1d51e32eab33e
+  languageName: node
+  linkType: hard
+
 "domutils@npm:^2.8.0":
   version: 2.8.0
   resolution: "domutils@npm:2.8.0"
@@ -6716,7 +6732,7 @@ __metadata:
     "@angular/platform-browser": ^15.1.0
     "@angular/platform-browser-dynamic": ^15.1.0
     "@angular/router": ^15.1.0
-    "@gravitee/ui-components": ^3.38.5
+    "@gravitee/ui-components": ^3.42.0
     "@types/jasmine": ~4.3.0
     "@typescript-eslint/eslint-plugin": 5.48.2
     "@typescript-eslint/parser": 5.48.2
